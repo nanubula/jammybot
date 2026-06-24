@@ -11,8 +11,12 @@ export const ROTATION = [
 ] as const;
 
 // Known anchor: on this FFXIV day, the map was ROTATION[index].
+// An "FFXIV day" labeled D runs from D 15:00 UTC to D+1 15:00 UTC (see
+// getFfxivDay). The Borderland Ruins rotation began at 2026-06-23 15:00 UTC
+// (11:00 EDT) and is the map active through the morning of 2026-06-24 EDT,
+// so the anchor day is 2026-06-23, not 2026-06-24.
 export const SEED = {
-  day: Date.UTC(2026, 5, 24), // 2026-06-24 (UTC midnight of the FFXIV day)
+  day: Date.UTC(2026, 5, 23), // 2026-06-23 (UTC midnight of the FFXIV day)
   index: 5, // The Borderland Ruins (Secure)
 };
 

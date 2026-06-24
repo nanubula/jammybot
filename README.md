@@ -32,8 +32,10 @@ The map changes daily at 11:00 EDT / 10:00 EST (15:00 UTC).
 
 If Square Enix changes the rotation order or it drifts, edit `src/rotation.ts`:
 - `ROTATION` — the ordered list of maps.
-- `SEED` — a known `{ day, index }` anchor. Default: 2026-06-24 = index 5
-  (The Borderland Ruins (Secure)).
+- `SEED` — a known `{ day, index }` anchor. Default: 2026-06-23 = index 5
+  (The Borderland Ruins (Secure)). The `day` is the FFXIV-day label, which
+  begins at the 15:00 UTC reset — so the map active the morning of 2026-06-24
+  (EDT) belongs to anchor day 2026-06-23.
 
 ## Deploying on Pella.app
 
