@@ -1,0 +1,20 @@
+{
+  "name": "jammybot",
+  "version": "1.0.0",
+  "description": "FFXIV PvP map rotation Discord bot",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "deploy": "tsx src/deploy-commands.ts",
+    "test": "tsx --test src/**/*.test.ts"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "tsx": "^4.19.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "@types/node": "^22.9.0"
+  }
+}
