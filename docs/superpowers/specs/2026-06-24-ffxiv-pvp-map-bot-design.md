@@ -38,7 +38,8 @@ the 11am/10am shift cancel out).
 - A "FFXIV day" begins at 15:00 UTC.
 - The current FFXIV day is computed by subtracting 15 hours from `now` and
   taking the resulting UTC calendar date.
-- The seed config provides one known `(date, rotation index)` pair. The map for
+- The seed config provides one known `(date, rotation index)` pair. **Default
+  seed: 2026-06-24 → index 5 (The Borderland Ruins (Secure)).** The map for
   any day = `rotation[(seedIndex + daysSince(seedDate)) mod 8]`.
 
 `daysSince` counts whole FFXIV days between the seed's FFXIV day and the target
